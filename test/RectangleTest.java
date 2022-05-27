@@ -13,4 +13,16 @@ class RectangleTest {
         Rectangle rectangle1 = new Rectangle(4, 7);
         assertEquals(28.0, rectangle1.computeArea());
     }
+
+    @Test
+    void modifySides() {
+        Rectangle rectangle = new Rectangle(3, 7);
+        assertEquals(21.0, rectangle.computeArea());
+
+        rectangle.setHeight(5);
+        assertEquals(15.0, rectangle.computeArea());
+
+        rectangle.setWidth(5.0);
+        assertEquals(25.0, rectangle.computeArea());
+    }
 }
